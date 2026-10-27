@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eco Aqua – Tratarea și purificarea apei</title>
+  <meta name="description" content="Eco Aqua – soluții de tratare și purificare a apei pentru case, pensiuni, HoReCa și industrie. Peste 24 de ani de experiență.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ATENȚIE: textele marcate [DE COMPLETAT] se înlocuiesc cu conținutul recuperat din arhivă. -->
+  <header class="top">
+    <div class="wrap nav">
+      <a class="logo" href="#">Eco<span>Aqua</span></a>
+      <nav>
+        <a href="#servicii">Servicii</a>
+        <a href="#clienti">Pentru cine</a>
+        <a href="#despre">Despre</a>
+        <a href="#contact" class="btn small">Cere ofertă</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <h1>Apă curată, sigură și gustoasă – pentru casă și afacere</h1>
+      <p>Analiză, proiectare, montaj și service pentru sisteme de tratare și purificare a apei. Peste 24 de ani de experiență.</p>
+      <a href="#contact" class="btn">Solicită o analiză a apei</a>
+    </div>
+  </section>
+
+  <section id="servicii" class="wrap">
+    <h2>Servicii</h2>
+    <div class="grid">
+      <article class="card"><h3>Dedurizare</h3><p>Elimină calcarul care distruge centralele, boilerele și electrocasnicele.</p></article>
+      <article class="card"><h3>Osmoză inversă</h3><p>Apă de băut purificată direct la robinet, fără bidoane.</p></article>
+      <article class="card"><h3>Filtrare și deferizare</h3><p>Îndepărtarea sedimentelor, fierului, manganului și mirosurilor din apa de fântână sau foraj.</p></article>
+      <article class="card"><h3>Dezinfecție UV</h3><p>Distrugerea bacteriilor fără chimicale.</p></article>
+      <article class="card"><h3>Analiza apei</h3><p>Stabilim exact ce problemă are apa înainte de a recomanda o soluție.</p></article>
+      <article class="card"><h3>Service și consumabile</h3><p>Întreținere periodică, schimb de filtre și sare, intervenții.</p></article>
+    </div>
+  </section>
+
+  <section id="clienti" class="alt">
+    <div class="wrap">
+      <h2>Pentru cine lucrăm</h2>
+      <div class="grid">
+        <article class="card"><h3>Case și apartamente</h3><p>Apă bună de băut și instalații protejate de calcar.</p></article>
+        <article class="card"><h3>Pensiuni</h3><p>Apă conformă pentru oaspeți, inclusiv din surse proprii.</p></article>
+        <article class="card"><h3>HoReCa</h3><p>Protecția espressoarelor, mașinilor de spălat vase și a cuptoarelor.</p></article>
+        <article class="card"><h3>Industrie</h3><p>Sisteme dimensionate pentru apă de proces și debite mari.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="despre" class="wrap">
+    <h2>Despre noi</h2>
+    <p>[DE COMPLETAT – textul „Despre noi” din site-ul vechi, completat cu cei 24 de ani de experiență.]</p>
+  </section>
+
+  <section id="contact" class="alt">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p>Telefon: <a href="tel:[DE COMPLETAT]">[DE COMPLETAT]</a><br>
+         E-mail: <a href="mailto:[DE COMPLETAT]">[DE COMPLETAT]</a><br>
+         Zonă de acoperire: [DE COMPLETAT]</p>
+      <form name="contact" method="POST" data-netlify="true" class="form">
+        <input type="hidden" name="form-name" value="contact">
+        <label>Nume <input name="nume" required></label>
+        <label>Telefon <input name="telefon" type="tel" required></label>
+        <label>Tip client
+          <select name="tip">
+            <option>Casă / apartament</option><option>Pensiune</option>
+            <option>HoReCa</option><option>Industrie</option>
+          </select>
+        </label>
+        <label>Mesaj <textarea name="mesaj" rows="4" placeholder="Sursa apei (rețea, fântână, foraj) și ce problemă observați"></textarea></label>
+        <button class="btn" type="submit">Trimite</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="wrap foot">© Eco Aqua · eco-aqua.ro</footer>
+</body>
+</html>
