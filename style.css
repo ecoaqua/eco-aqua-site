@@ -37,3 +37,8 @@ nav a { text-decoration: none; color: var(--dark); }
 .mt { margin-top: 40px; }
 .tags { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .tags li { background: #fff; border: 1px solid #c9dbe7; border-radius: 999px; padding: 4px 12px; font-size: .95rem; }
+.btn.ghost-dark { background: transparent; color: var(--blue) !important; border: 2px solid var(--blue); }
+.small-hero { padding: 48px 0; }
+.jump { display: flex; flex-wrap: wrap; gap: 8px 16px; padding-top: 16px; padding-bottom: 16px; border-bottom: 1px solid #dde7ee; }
+.card ul { margin: 0; padding-left: 18px; }
+.card li { margin-bottom: 4px; }
