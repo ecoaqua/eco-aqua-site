@@ -3,65 +3,157 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Eco Aqua – Stații de tratare și purificare a apei</title>
-  <meta name="description" content="SC Eco Aqua SRL – proiectare și montaj de stații de tratare a apei, clorinare, grupuri de pompare, sterilizatoare UV și osmoză inversă. Peste 24 de ani de experiență. Tel. 0264 221 643.">
+  <title>Eco Aqua – Tehnologii precise pentru purificarea apei</title>
+  <meta name="description" content="SC Eco Aqua SRL – analiza apei cu laborator mobil, proiectare și montaj de stații de tratare, dedurizatoare, osmoză inversă, sterilizare UV, clorinare și pompe. Peste 24 de ani de experiență. Tel. 0264 221 643.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- ATENȚIE: textele marcate [DE COMPLETAT] se înlocuiesc cu conținutul recuperat din arhivă. -->
+  <!-- Pictograme folosite în pagină -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-statie" viewBox="0 0 24 24"><rect x="3" y="4" width="7" height="17" rx="2"/><rect x="14" y="8" width="7" height="13" rx="2"/><path d="M10 9h4M6.5 8v3M17.5 12v3"/></symbol>
+    <symbol id="i-scut" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+    <symbol id="i-pompa" viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 13l4-4M12 5v1.5M5 13h1.5M17.5 13H19"/></symbol>
+    <symbol id="i-uv" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-filtru" viewBox="0 0 24 24"><path d="M3 4h18l-7 8v6l-4 2v-8z"/></symbol>
+    <symbol id="i-piscina" viewBox="0 0 24 24"><path d="M2 17c2 0 2-1.5 4-1.5s2 1.5 4 1.5 2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5M2 21c2 0 2-1.5 4-1.5s2 1.5 4 1.5 2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5M8 14V6a2 2 0 0 1 4 0M16 14V6a2 2 0 0 0-4 0M8 9h8"/></symbol>
+    <symbol id="i-casa" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M12 12.5s2.5 2.7 2.5 4.3a2.5 2.5 0 0 1-5 0c0-1.6 2.5-4.3 2.5-4.3z"/></symbol>
+    <symbol id="i-cafea" viewBox="0 0 24 24"><path d="M4 9h13v4a6 6 0 0 1-6 6h-1a6 6 0 0 1-6-6z"/><path d="M17 10h1.5a2.5 2.5 0 0 1 0 5H17M8 3v3M12 3v3"/></symbol>
+    <symbol id="i-cruce" viewBox="0 0 24 24"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></symbol>
+    <symbol id="i-fabrica" viewBox="0 0 24 24"><path d="M3 21V11l6 4v-4l6 4V4h6v17z"/><path d="M7 18h2M12 18h2"/></symbol>
+    <symbol id="i-frunza" viewBox="0 0 24 24"><path d="M5 20c0-9 6-15 15-15 0 9-6 15-15 15z"/><path d="M5 20l8-8"/></symbol>
+    <symbol id="i-primarie" viewBox="0 0 24 24"><path d="M3 21h18M4 10h16M12 3l9 7H3z"/><path d="M6 10v8M10 10v8M14 10v8M18 10v8"/></symbol>
+    <symbol id="i-eprubeta" viewBox="0 0 24 24"><path d="M9 3h6M10 3v7l-5 8.5A1.7 1.7 0 0 0 6.5 21h11a1.7 1.7 0 0 0 1.5-2.5L14 10V3"/><path d="M7.5 15h9"/></symbol>
+    <symbol id="i-unelte" viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0 5 5L21 13l-8 8-3-3 8-8"/><path d="M3 21l6-6M7 3l4 4-2 2-4-4z"/></symbol>
+    <symbol id="i-glob" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></symbol>
+    <symbol id="i-cheie" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M12 8v5M12 16h.01"/></symbol>
+    <symbol id="i-tel" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+  </svg>
+
   <header class="top">
     <div class="wrap nav">
-      <a class="logo" href="#">Eco<span>Aqua</span></a>
+      <a class="logo" href="index.html" aria-label="Eco Aqua – pagina principală">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7be3f5"/><stop offset="1" stop-color="#0e6fb8"/></linearGradient></defs><path d="M23 4s11 12 11 20a11 11 0 0 1-22 0c0-8 11-20 11-20z" fill="url(#lg)"/><circle cx="7" cy="12" r="3.2" fill="#22c3e6" opacity=".85"/><circle cx="11" cy="5" r="1.8" fill="#7be3f5" opacity=".85"/><path d="M18 25a5 5 0 0 0 5 5" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" opacity=".85"/></svg>
+        <span><b>ECO AQUA</b><small>Tehnologii precise pentru purificarea apei</small></span>
+      </a>
+      <button class="menu-toggle" aria-label="Meniu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
       <nav>
         <a href="analiza-apei.html">Analiza apei</a>
         <a href="produse.html">Produse</a>
         <a href="domenii.html">Domenii</a>
-        <a href="#despre">Companie</a>
-        <a href="#contact" class="btn small">Cere ofertă</a>
+        <a href="index.html#despre">Companie</a>
+        <a href="index.html#contact" class="btn small">Cere ofertă</a>
       </nav>
     </div>
   </header>
 
   <section class="hero">
-    <div class="wrap">
-      <h1>Gama completă de produse și servicii pentru tratarea apei, într-un singur loc</h1>
-      <p>De peste 24 de ani facem apa mai bună: proiectăm și montăm sisteme de tratare a apei pentru domeniile municipal, industrial, comercial și rezidențial.</p>
-      <a href="#contact" class="btn">Cere ofertă</a>
-      <a href="tel:+40746183771" class="btn ghost">Sună: 0746 183 771</a>
+    <span class="bubble" style="left:8%;width:14px;height:14px;animation-duration:11s"></span>
+    <span class="bubble" style="left:22%;width:8px;height:8px;animation-duration:8s;animation-delay:2s"></span>
+    <span class="bubble" style="left:47%;width:18px;height:18px;animation-duration:13s;animation-delay:4s"></span>
+    <span class="bubble" style="left:63%;width:10px;height:10px;animation-duration:9s;animation-delay:1s"></span>
+    <span class="bubble" style="left:81%;width:22px;height:22px;animation-duration:15s;animation-delay:3s"></span>
+    <span class="bubble" style="left:92%;width:9px;height:9px;animation-duration:10s;animation-delay:6s"></span>
+
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">SC Eco Aqua SRL · peste 24 de ani de experiență</span>
+        <h1>Gama completă pentru <span class="grad">tratarea apei</span>, într-un singur loc</h1>
+        <p>Analiză, proiectare, montaj și service pentru sisteme de tratare și purificare a apei – pentru case, pensiuni, HoReCa, industrie și municipalități.</p>
+        <div class="btns">
+          <a href="#contact" class="btn">Cere ofertă</a>
+          <a href="analiza-apei.html" class="btn ghost">Programează analiza apei</a>
+        </div>
+      </div>
+      <aside class="glass">
+        <h3>De ce să lucrați cu Eco Aqua</h3>
+        <ul class="checks">
+          <li>Analiza apei la fața locului, cu laborator mobil</li>
+          <li>Soluție dimensionată exact după rezultate, fără cheltuieli inutile</li>
+          <li>Echipamente din SUA, Franța, Italia, Israel, Suedia și Germania</li>
+          <li>Proiectare, montaj și service cu tehnicieni proprii</li>
+          <li>Garanție între 1 și 5 ani</li>
+        </ul>
+        <div class="call">Vorbiți direct cu un specialist:<br><a href="tel:+40746183771">0746 183 771</a></div>
+      </aside>
     </div>
+
+    <svg class="waves back" viewBox="0 0 2880 110" preserveAspectRatio="none" aria-hidden="true"><path fill="#22c3e6" d="M0 60C180 20 540 100 720 60S1260 100 1440 60S1980 100 2160 60S2700 100 2880 60V110H0Z"/></svg>
+    <svg class="waves" viewBox="0 0 2880 110" preserveAspectRatio="none" aria-hidden="true"><path fill="#ffffff" d="M0 60C180 20 540 100 720 60S1260 100 1440 60S1980 100 2160 60S2700 100 2880 60V110H0Z"/></svg>
+  </section>
+
+  <div class="wrap stats">
+    <div class="stats-grid">
+      <div class="stat"><b>24+</b><span>ani de experiență</span></div>
+      <div class="stat"><b>130+</b><span>produse în catalog</span></div>
+      <div class="stat"><b>40+</b><span>domenii deservite</span></div>
+      <div class="stat"><b>1–5 ani</b><span>garanție</span></div>
+    </div>
+  </div>
+
+  <section id="produse" class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Aplicații frecvente</span>
+      <h2>Soluții pentru orice problemă a apei</h2>
+      <p>De la un filtru pentru bucătărie la stații de tratare containerizate pentru localități și fabrici.</p>
+    </div>
+    <div class="grid">
+      <article class="card"><div class="ico"><svg><use href="#i-statie"/></svg></div><h3>Stații de tratare a apei</h3><p>Sisteme complete, dimensionate după analiza apei și consumul real: filtrare, deferizare, demanganizare, dedurizare.</p></article>
+      <article class="card"><div class="ico"><svg><use href="#i-scut"/></svg></div><h3>Stații de clorinare</h3><p>Dezinfecția sigură a apei potabile și a piscinelor, cu dozare controlată a clorului.</p></article>
+      <article class="card"><div class="ico"><svg><use href="#i-pompa"/></svg></div><h3>Grupuri de pompare</h3><p>Presiune constantă și debit suficient, de la locuințe la rețele și procese industriale.</p></article>
+      <article class="card"><div class="ico"><svg><use href="#i-uv"/></svg></div><h3>Sterilizatoare UV</h3><p>Distrug bacteriile și virusurile din apă fără chimicale și fără a schimba gustul.</p></article>
+      <article class="card"><div class="ico"><svg><use href="#i-filtru"/></svg></div><h3>Osmoză inversă și desalinizare</h3><p>Apă de înaltă puritate pentru consum, industrie alimentară, farmaceutică și medicală.</p></article>
+      <article class="card"><div class="ico"><svg><use href="#i-piscina"/></svg></div><h3>Echipamente pentru piscine</h3><p>Filtrare, tratare, încălzire și dezumidificare pentru piscine private, pensiuni, hoteluri și bazine publice.</p></article>
+    </div>
+    <div class="center btns" style="justify-content:center"><a href="produse.html" class="btn ghost-dark">Vezi toate produsele</a><a href="#contact" class="btn">Solicită ofertă</a></div>
   </section>
 
   <section class="band">
-    <div class="wrap">
-      <h2>Laborator mobil de analiză a apei</h2>
-      <p>Venim la dumneavoastră și analizăm apa din rețea, fântână sau puț forat: fier, mangan, nitrați, nitriți, duritate, pH, clor, turbiditate și altele. Apoi vă propunem soluția potrivită, nu una la întâmplare.</p>
-      <a href="analiza-apei.html" class="btn">Află cum funcționează</a>
+    <div class="wrap band-grid">
+      <div>
+        <span class="kicker" style="color:#9fe6f7">Laborator mobil</span>
+        <h2>Aflați ce are apa dumneavoastră, înainte să cumpărați ceva</h2>
+        <p>Venim la dumneavoastră și analizăm apa din rețea, fântână sau puț forat. Apoi vă propunem soluția potrivită, nu una la întâmplare.</p>
+        <a href="analiza-apei.html" class="btn">Află cum funcționează</a>
+      </div>
+      <ul class="tags">
+        <li>Fier</li><li>Mangan</li><li>Nitrați</li><li>Nitriți</li><li>Duritate</li><li>pH</li><li>Clor</li><li>Turbiditate</li><li>Amoniu</li><li>Conductivitate</li>
+      </ul>
     </div>
   </section>
 
-  <section id="produse" class="wrap">
-    <h2>Aplicații frecvente</h2>
-    <div class="grid">
-      <article class="card"><h3>Stații de tratare a apei</h3><p>Sisteme complete, dimensionate după analiza apei și consumul real: filtrare, deferizare, demanganizare, dedurizare.</p></article>
-      <article class="card"><h3>Stații de clorinare</h3><p>Dezinfecția sigură a apei potabile și a piscinelor, cu dozare controlată a clorului.</p></article>
-      <article class="card"><h3>Grupuri de pompare</h3><p>Presiune constantă și debit suficient, de la locuințe la rețele și procese industriale.</p></article>
-      <article class="card"><h3>Sterilizatoare UV</h3><p>Distrug bacteriile și virusurile din apă fără chimicale și fără a schimba gustul.</p></article>
-      <article class="card"><h3>Osmoză inversă și desalinizare</h3><p>Apă de înaltă puritate pentru consum, industrie alimentară, farmaceutică și medicală.</p></article>
-      <article class="card"><h3>Echipamente pentru piscine</h3><p>Filtrare, tratare, încălzire și dezumidificare pentru piscine private, pensiuni, hoteluri și bazine publice.</p></article>
+  <section class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Cum lucrăm</span>
+      <h2>De la analiză la apă curată, în 4 pași</h2>
     </div>
-    <p class="center"><a href="produse.html" class="btn ghost-dark">Vezi toate produsele</a> <a href="#contact" class="btn">Solicită ofertă</a></p>
+    <div class="process">
+      <article class="card"><div class="ico"><svg><use href="#i-eprubeta"/></svg></div><h3>Analiză</h3><p>Testăm apa la fața locului și vedem exact ce trebuie corectat.</p></article>
+      <article class="card"><div class="ico"><svg><use href="#i-statie"/></svg></div><h3>Proiectare</h3><p>Alegem și dimensionăm echipamentele după rezultate și consum.</p></article>
+      <article class="card"><div class="ico"><svg><use href="#i-unelte"/></svg></div><h3>Montaj</h3><p>Execuție și punere în funcțiune cu tehnicieni bine pregătiți.</p></article>
+      <article class="card"><div class="ico"><svg><use href="#i-cheie"/></svg></div><h3>Service</h3><p>Întreținere în garanție și post-garanție, consumabile și suport direct.</p></article>
+    </div>
   </section>
 
   <section id="domenii" class="alt">
     <div class="wrap">
-      <h2>Tratarea apei pe domenii</h2>
+      <div class="sec-head">
+        <span class="kicker">Domenii</span>
+        <h2>Pentru cine lucrăm</h2>
+        <p>Fiecare domeniu are alte cerințe pentru apă. Le cunoaștem pe toate.</p>
+      </div>
       <div class="grid">
-        <article class="card"><h3>Medical și farmaceutic</h3><p>Calitatea și puritatea apei sunt obligatorii, pentru a nu pune în pericol sănătatea pacienților.</p></article>
-        <article class="card"><h3>Municipalități</h3><p>Fiind vorba de consum uman, apa trebuie filtrată și adusă la gradul optim de puritate.</p></article>
-        <article class="card"><h3>Agricultură</h3><p>În orice ramură a agriculturii apa are un rol crucial, de aceea trebuie să fie curată și purificată.</p></article>
-        <article class="card"><h3>Industrie</h3><p>Indiferent de domeniu, filtrarea apei protejează utilajele și asigură calitatea procesului.</p></article>
-        <article class="card"><h3>HoReCa</h3><p>Apa este ingredient în produsele finale, deci trebuie să fie curată și purificată. Protejăm și espressoarele, mașinile de spălat vase și cuptoarele.</p></article>
-        <article class="card"><h3>Case și pensiuni</h3><p>Apă bună de băut din rețea, fântână sau foraj și instalații protejate de calcar.</p></article>
+        <article class="card"><div class="ico"><svg><use href="#i-casa"/></svg></div><h3>Case și pensiuni</h3><p>Apă bună de băut din rețea, fântână sau foraj și instalații protejate de calcar.</p></article>
+        <article class="card"><div class="ico"><svg><use href="#i-cafea"/></svg></div><h3>HoReCa</h3><p>Apa este ingredient în produsele finale. Protejăm și espressoarele, mașinile de spălat vase și cuptoarele.</p></article>
+        <article class="card"><div class="ico"><svg><use href="#i-cruce"/></svg></div><h3>Medical și farmaceutic</h3><p>Calitatea și puritatea apei sunt obligatorii, pentru a nu pune în pericol sănătatea pacienților.</p></article>
+        <article class="card"><div class="ico"><svg><use href="#i-fabrica"/></svg></div><h3>Industrie</h3><p>Filtrarea apei protejează utilajele și asigură calitatea procesului, în orice domeniu.</p></article>
+        <article class="card"><div class="ico"><svg><use href="#i-frunza"/></svg></div><h3>Agricultură</h3><p>Apă curată pentru irigații, ferme, sere și piscicultură.</p></article>
+        <article class="card"><div class="ico"><svg><use href="#i-primarie"/></svg></div><h3>Municipalități</h3><p>Fiind vorba de consum uman, apa trebuie filtrată și adusă la gradul optim de puritate.</p></article>
       </div>
 
       <h3 class="mt">Cu cine lucrăm</h3>
@@ -78,43 +170,76 @@
   </section>
 
   <section id="despre" class="wrap">
-    <h2>Despre SC Eco Aqua SRL</h2>
-    <p>Credem că apa curată este o resursă de neprețuit. De peste 24 de ani dezvoltăm soluții de tratare și epurare a apei cu tehnologii care respectă mediul înconjurător, pentru municipalități, companii industriale, afaceri și familii.</p>
-    <p>Industrializarea și riscul de contaminare chimică și biologică reduc continuu volumul de apă curată. Scopul nostru este să protejăm această resursă și pentru generațiile viitoare, prin soluții complete, de lungă durată și sustenabile, bazate pe integritate, inovație și profesionalism.</p>
-
-    <div class="grid mt">
-      <article class="card"><h3>De la consultanță la montaj</h3><p>Oferim pachete complete: consultanță, proiectare, execuție, montaj și întreținere, cu tehnicieni bine pregătiți și experiență în lucrări de anvergură.</p></article>
-      <article class="card"><h3>Echipamente de renume mondial</h3><p>Folosim doar produse ale unor producători cu tradiție din SUA, Franța, Italia, Israel, Suedia și Germania, astfel încât apa tratată să se încadreze în valorile legale naționale și europene.</p></article>
-      <article class="card"><h3>Soluții adaptate, fără cheltuieli inutile</h3><p>Filtrarea apei potabile și uzate, echipamente pentru apă rece, caldă și carbogazoasă pentru orice debit, dimensionate exact după nevoia dumneavoastră.</p></article>
-      <article class="card"><h3>Suport tehnic direct</h3><p>Vorbiți direct cu serviciul tehnic, fără intermediari. Asigurăm service în garanție și post-garanție, iar echipamentele defecte se înlocuiesc din stoc sau la comandă în cel mult 3 zile.</p></article>
-      <article class="card"><h3>Garanție 1–5 ani</h3><p>Toate produsele și serviciile au fiabilitate ridicată și garanție între 1 și 5 ani.</p></article>
+    <div class="about-grid">
+      <div>
+        <span class="kicker">Companie</span>
+        <h2>Despre SC Eco Aqua SRL</h2>
+        <p>Credem că apa curată este o resursă de neprețuit. De peste 24 de ani dezvoltăm soluții de tratare și epurare a apei cu tehnologii care respectă mediul înconjurător, pentru municipalități, companii industriale, afaceri și familii.</p>
+        <p>Industrializarea și riscul de contaminare chimică și biologică reduc continuu volumul de apă curată. Scopul nostru este să protejăm această resursă și pentru generațiile viitoare, prin soluții complete, de lungă durată și sustenabile, bazate pe integritate, inovație și profesionalism.</p>
+        <p>Oferim echipamente de filtrare pentru apă potabilă și uzată și echipamente pentru apă rece, caldă și carbogazoasă pentru orice debit, dimensionate exact după nevoia dumneavoastră.</p>
+      </div>
+      <div class="feat">
+        <article class="card"><div class="ico"><svg><use href="#i-unelte"/></svg></div><div><h3>De la consultanță la montaj</h3><p>Consultanță, proiectare, execuție, montaj și întreținere, cu experiență în lucrări de anvergură.</p></div></article>
+        <article class="card"><div class="ico"><svg><use href="#i-glob"/></svg></div><div><h3>Echipamente de renume mondial</h3><p>Producători din SUA, Franța, Italia, Israel, Suedia și Germania. Apa tratată se încadrează în valorile legale naționale și europene.</p></div></article>
+        <article class="card"><div class="ico"><svg><use href="#i-tel"/></svg></div><div><h3>Suport tehnic direct</h3><p>Vorbiți direct cu serviciul tehnic, fără intermediari. Echipamentele defecte se înlocuiesc din stoc sau la comandă în cel mult 3 zile.</p></div></article>
+        <article class="card"><div class="ico"><svg><use href="#i-scut"/></svg></div><div><h3>Garanție 1–5 ani</h3><p>Produse și servicii cu fiabilitate ridicată, plus service în garanție și post-garanție.</p></div></article>
+      </div>
     </div>
   </section>
 
-  <section id="contact" class="alt">
+  <section id="contact" class="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <span class="kicker" style="color:#9fe6f7">Contact</span>
+        <h2>Spuneți-ne ce problemă are apa dumneavoastră</h2>
+        <p style="color:rgba(255,255,255,.8)">Vă răspundem cu o recomandare și o ofertă. Pentru o analiză la fața locului, sunați-ne direct.</p>
+        <ul class="contact-list">
+          <li><span class="ico"><svg><use href="#i-tel"/></svg></span><span><a href="tel:+40746183771">0746 183 771</a><br><a href="tel:+40264221643">0264 221 643</a></span></li>
+          <li><span class="ico"><svg><use href="#i-mail"/></svg></span><span>[DE COMPLETAT – e-mail]</span></li>
+          <li><span class="ico"><svg><use href="#i-pin"/></svg></span><span>[DE COMPLETAT – adresă / zonă]</span></li>
+        </ul>
+      </div>
+      <div class="form-card">
+        <h3>Cere ofertă</h3>
+        <form name="contact" method="POST" data-netlify="true" class="form">
+          <input type="hidden" name="form-name" value="contact">
+          <label>Nume <input name="nume" autocomplete="name" required></label>
+          <label>Telefon <input name="telefon" type="tel" autocomplete="tel" required></label>
+          <label>Tip client
+            <select name="tip">
+              <option>Casă / apartament</option><option>Pensiune / hotel</option>
+              <option>HoReCa</option><option>Industrie</option>
+              <option>Primărie / companie de apă</option><option>Medical / farmaceutic</option>
+              <option>Agricultură</option><option>Altul</option>
+            </select>
+          </label>
+          <label>Mesaj <textarea name="mesaj" rows="4" placeholder="Sursa apei (rețea, fântână, foraj), consumul aproximativ și ce problemă observați"></textarea></label>
+          <button class="btn" type="submit">Trimite cererea</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-foot">
     <div class="wrap">
-      <h2>Contact</h2>
-      <p>Telefon: <a href="tel:+40264221643">0264 221 643</a> · <a href="tel:+40746183771">0746 183 771</a><br>
-         E-mail: [DE COMPLETAT]<br>
-         Adresă: [DE COMPLETAT]</p>
-      <form name="contact" method="POST" data-netlify="true" class="form">
-        <input type="hidden" name="form-name" value="contact">
-        <label>Nume <input name="nume" required></label>
-        <label>Telefon <input name="telefon" type="tel" required></label>
-        <label>Tip client
-          <select name="tip">
-            <option>Casă / apartament</option><option>Pensiune / hotel</option>
-            <option>HoReCa</option><option>Industrie</option>
-            <option>Primărie / companie de apă</option><option>Medical / farmaceutic</option>
-            <option>Agricultură</option><option>Altul</option>
-          </select>
-        </label>
-        <label>Mesaj <textarea name="mesaj" rows="4" placeholder="Sursa apei (rețea, fântână, foraj), consumul aproximativ și ce problemă observați"></textarea></label>
-        <button class="btn" type="submit">Trimite cererea</button>
-      </form>
+      <div class="foot-grid">
+        <div>
+          <a class="logo" href="index.html"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M23 4s11 12 11 20a11 11 0 0 1-22 0c0-8 11-20 11-20z" fill="url(#lg)"/><circle cx="7" cy="12" r="3.2" fill="#22c3e6" opacity=".85"/><circle cx="11" cy="5" r="1.8" fill="#7be3f5" opacity=".85"/></svg><span><b>ECO AQUA</b><small>Tehnologii precise pentru purificarea apei</small></span></a>
+          <p>Analiză, proiectare, montaj și service pentru sisteme de tratare și purificare a apei.</p>
+        </div>
+        <div>
+          <h4>Pagini</h4>
+          <ul><li><a href="analiza-apei.html">Analiza apei</a></li><li><a href="produse.html">Produse</a></li><li><a href="domenii.html">Domenii</a></li><li><a href="index.html#despre">Companie</a></li></ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul><li><a href="tel:+40746183771">0746 183 771</a></li><li><a href="tel:+40264221643">0264 221 643</a></li><li><a href="index.html#contact">Cere ofertă</a></li></ul>
+        </div>
+      </div>
+      <div class="copy">© SC Eco Aqua SRL · eco-aqua.ro</div>
     </div>
-  </section>
+  </footer>
 
-  <footer class="wrap foot">© SC Eco Aqua SRL · eco-aqua.ro · Tel. 0264 221 643</footer>
+  <a class="float-call" href="tel:+40746183771" aria-label="Sună acum"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></a>
 </body>
 </html>

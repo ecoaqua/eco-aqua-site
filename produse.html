@@ -5,12 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Produse – Eco Aqua | Filtre, dedurizatoare, osmoză inversă, pompe, piscine</title>
   <meta name="description" content="Catalogul Eco Aqua: filtre mecanice și automate, dedurizatoare, deferizatoare, osmoză inversă, sterilizare UV, clorinare, ozonizare, pompe dozatoare, pompe și echipamente pentru piscine.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header class="top">
     <div class="wrap nav">
-      <a class="logo" href="index.html">Eco<span>Aqua</span></a>
+      <a class="logo" href="index.html" aria-label="Eco Aqua – pagina principală">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7be3f5"/><stop offset="1" stop-color="#0e6fb8"/></linearGradient></defs><path d="M23 4s11 12 11 20a11 11 0 0 1-22 0c0-8 11-20 11-20z" fill="url(#lg)"/><circle cx="7" cy="12" r="3.2" fill="#22c3e6" opacity=".85"/><circle cx="11" cy="5" r="1.8" fill="#7be3f5" opacity=".85"/><path d="M18 25a5 5 0 0 0 5 5" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" opacity=".85"/></svg>
+        <span><b>ECO AQUA</b><small>Tehnologii precise pentru purificarea apei</small></span>
+      </a>
+      <button class="menu-toggle" aria-label="Meniu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
       <nav>
         <a href="analiza-apei.html">Analiza apei</a>
         <a href="produse.html">Produse</a>
@@ -186,6 +194,26 @@
     <p class="center"><a href="index.html#contact" class="btn">Cere ofertă pentru produsele dorite</a></p>
   </section>
 
-  <footer class="wrap foot">© SC Eco Aqua SRL · eco-aqua.ro · Tel. <a href="tel:+40264221643">0264 221 643</a> · <a href="tel:+40746183771">0746 183 771</a></footer>
+  <footer class="site-foot">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <a class="logo" href="index.html"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M23 4s11 12 11 20a11 11 0 0 1-22 0c0-8 11-20 11-20z" fill="url(#lg)"/><circle cx="7" cy="12" r="3.2" fill="#22c3e6" opacity=".85"/><circle cx="11" cy="5" r="1.8" fill="#7be3f5" opacity=".85"/></svg><span><b>ECO AQUA</b><small>Tehnologii precise pentru purificarea apei</small></span></a>
+          <p>Analiză, proiectare, montaj și service pentru sisteme de tratare și purificare a apei.</p>
+        </div>
+        <div>
+          <h4>Pagini</h4>
+          <ul><li><a href="analiza-apei.html">Analiza apei</a></li><li><a href="produse.html">Produse</a></li><li><a href="domenii.html">Domenii</a></li><li><a href="index.html#despre">Companie</a></li></ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul><li><a href="tel:+40746183771">0746 183 771</a></li><li><a href="tel:+40264221643">0264 221 643</a></li><li><a href="index.html#contact">Cere ofertă</a></li></ul>
+        </div>
+      </div>
+      <div class="copy">© SC Eco Aqua SRL · eco-aqua.ro</div>
+    </div>
+  </footer>
+
+  <a class="float-call" href="tel:+40746183771" aria-label="Sună acum"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></a>
 </body>
 </html>
