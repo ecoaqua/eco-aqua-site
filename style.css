@@ -198,3 +198,5 @@ section.wrap { padding: 88px 20px; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   html { scroll-behavior: auto; }
 }
+.home-note { display: flex; gap: 16px; align-items: flex-start; margin-top: 32px; background: #fff; border-style: dashed; }
+.home-note .ico { flex: none; margin: 0; }
