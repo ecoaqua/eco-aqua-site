@@ -44,3 +44,6 @@ nav a { text-decoration: none; color: var(--dark); }
 .card li { margin-bottom: 4px; }
 .info { margin-top: 12px; border-top: 1px solid #dde7ee; padding-top: 8px; }
 .info summary { cursor: pointer; font-weight: 600; color: var(--blue); }
+.band { background: #e6f6ef; border-top: 1px solid #c4e8d7; border-bottom: 1px solid #c4e8d7; }
+.steps { padding-left: 20px; }
+.steps li { margin-bottom: 10px; }
