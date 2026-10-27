@@ -31,3 +31,9 @@ nav a { text-decoration: none; color: var(--dark); }
 .form input, .form select, .form textarea { font: inherit; padding: 10px; border: 1px solid #b9cbd8; border-radius: 6px; }
 
 .foot { padding: 24px 16px; color: #5b6b78; font-size: .9rem; }
+
+.btn.ghost { background: transparent; border: 2px solid #fff; margin-left: 8px; }
+.center { text-align: center; margin-top: 24px; }
+.mt { margin-top: 40px; }
+.tags { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.tags li { background: #fff; border: 1px solid #c9dbe7; border-radius: 999px; padding: 4px 12px; font-size: .95rem; }
