@@ -10,7 +10,7 @@
 - Site static: HTML + CSS + JS simplu, **fără build**. Fișiere: `index.html`, `analiza-apei.html`, `produse.html`, `domenii.html`, `style.css`, `script.js`.
 - Depozit: https://github.com/ecoaqua/eco-aqua-site (ramura `main`). Găzduire: **Netlify**, https://eco-aqua.netlify.app (privat până la finalizare).
 - Formularul de ofertă din `index.html#contact` folosește **Netlify Forms** (`data-netlify="true"`).
-- Previzualizare navigabilă (privată, actualizată cu lotul 1): https://claude.ai/artifact/QE8Z1mu42HTqAgQFALPuLF – republicată dintr-o copie din scratchpad (index fără `<html>/<head>/<body>`, formularul cu `preventDefault`).
+- Previzualizare navigabilă (privată): https://claude.ai/artifact/QE8Z1mu42HTqAgQFALPuLF – **aici îi arătăm clientului modificările** (în loc de publicări pe Netlify). Actualizată 05.11.2026 cu logo-ul nou. Se refăce dintr-o copie în scratchpad: `index.html` fără `<html>/<head>/<body>` (conținutul din head pus sus, titlul „Eco Aqua Site Preview”) + scriptul care face `preventDefault` la formular; celelalte pagini, `style.css`, `script.js` și tot `img/` (fără `SURSE.md`) se trimit prin `files`, cu `root` = copia.
 - Mesajele de commit se scriu în română.
 
 ## Poziționare și design (decizii luate cu clientul)
