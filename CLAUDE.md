@@ -9,7 +9,7 @@
 - Site static: HTML + CSS + JS simplu, **fără build**. Fișiere: `index.html`, `analiza-apei.html`, `produse.html`, `domenii.html`, `style.css`, `script.js`.
 - Depozit: https://github.com/ecoaqua/eco-aqua-site (ramura `main`). Găzduire: **Netlify** (în curs de configurare – vezi mai jos).
 - Formularul de ofertă din `index.html#contact` folosește **Netlify Forms** (`data-netlify="true"`).
-- Previzualizare navigabilă (privată): https://claude.ai/artifact/QE8Z1mu42HTqAgQFALPuLF – republicată dintr-o copie din scratchpad (index fără `<html>/<head>/<body>`, formularul cu `preventDefault`).
+- Previzualizare navigabilă (privată, actualizată cu lotul 1): https://claude.ai/artifact/QE8Z1mu42HTqAgQFALPuLF – republicată dintr-o copie din scratchpad (index fără `<html>/<head>/<body>`, formularul cu `preventDefault`).
 - Mesajele de commit se scriu în română.
 
 ## Poziționare și design (decizii luate cu clientul)
@@ -33,7 +33,7 @@
 - **Ce vinde clientul efectiv** (răspuns 05.11.2026): stații de tratare, clorinare, sterilizare UV, ozonizare, osmoză inversă, dedurizare, deferizare, filtrare și pompare. Din Euro-Clear preluăm doar produsele care intră în aceste categorii.
 - **Aviz sanitar**: clientul confirmă că toate produsele au aviz sanitar în România.
 - Produsele Euro-Clear se pun **lângă** catalogul vechi, nu îl înlocuiesc.
-- Rețea: clientul a dat acces complet. `euro-clear.eu` merge (05.11.2026). Push-ul pe GitHub încă nu e permis (add_repo push respins), deci commit-urile rămân locale până se rezolvă.
+- Rețea: clientul a dat acces complet. `euro-clear.eu` merge (05.11.2026). Push-ul pe GitHub funcționează (permis de client pe 05.11.2026).
 - Structura site-ului Euro-Clear: paginile industriale sunt în `/en/industrial-water-treatment/...` (vezi `page-sitemap.xml`). Pagini de produs individuale există doar pentru ARCTON RO (`termek-sitemap.xml`, 28 modele EN). Nu au ozonizare, pompare sau stații complete, iar clorinarea e probabil la „dosing-technology”.
 - **Lot 1 (gata)**: secțiunea `#industrial` din `produse.html`, cu 5 carduri (dedurizatoare, filtrare/deferizare, UV VIQUA HighFlow, osmoză BlueClear/ARCTON, prefiltre DF/IWF). Pozele sunt în `img/euro-clear/*.webp` (max 600px). Cardul de osmoză nu are poză.
 - **Lot 2 (următorul)**: componente (supape Clack/Fleck/Autotrol/Runxin, rășini, membrane, rezervoare, dozare), poză pentru osmoză (de pe blueclear.eu sau o pagină ARCTON), PDF-urile de la /en/downloads/ ca descărcări.
