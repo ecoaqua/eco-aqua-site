@@ -2,6 +2,7 @@
 
 ## Despre client
 - Ovidiu, inginer cu peste 24 de ani de experiență în tratarea și purificarea apei. Firma: **SC Eco Aqua SRL** (Dej, jud. Cluj).
+- **Ne tutuim**: i se vorbește la persoana a doua singular („tu”), nu cu „dumneavoastră” (cererea lui, 05.11.2026).
 - Este **începător în partea tehnică**: explicațiile se dau **în română, pas cu pas**, simplu, cu linkuri exacte și butoanele pe care trebuie să le apese. Folosește aplicația Claude pe Windows.
 - Abonament Pro: lucrăm pe loturi mici și eficient (scripturi care extrag doar ce trebuie, nu citire de pagini întregi).
 
