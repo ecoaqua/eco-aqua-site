@@ -28,24 +28,16 @@
 - Locuri marcate `[DE COMPLETAT]`: **e-mail**, **adresă/zonă**. Telefoane (de confirmat): 0746 183 771, 0264 221 643.
 - Am scris eu (de verificat de client): descrierile scurte ale aplicațiilor/domeniilor; exemplele „lactate, panificație” la industria alimentară.
 
-## Euro-Clear (furnizor principal) – URMĂTORUL PAS
-- https://www.euro-clear.eu – producător maghiar (Euro-Clear Kft.). **Clientul are acordul lor** să le folosească pozele, descrierile și documentele.
-- Gamă industrială: dedurizatoare, filtre, UV, prefiltre mecanice, osmoză inversă BlueClear și ARCTON, componente (supape, butelii, distribuitoare, rezervoare saramură, membrane, rășini, mase filtrante, dozare), stație cu zeolit. Gamă rezidențială: BlueSoft, RainWater, SmartWaterSoftener, DFA, CPF, Aquaz UV.
-- Manuale PDF publice: https://www.euro-clear.eu/letoltesek/ (EN: /en/downloads/).
-- Plan: **întâi gama industrială**, pe loturi de 5–10 produse; script care descarcă paginile și pozele și extrage doar nume/date tehnice/descriere; descrieri **adaptate în română** (nu traduse literal, pentru SEO); pozele optimizate; PDF-urile doar atașate ca descărcări.
-- **Ce vinde clientul efectiv** (răspuns 05.11.2026): stații de tratare, clorinare, sterilizare UV, ozonizare, osmoză inversă, dedurizare, deferizare, filtrare și pompare. Din Euro-Clear preluăm doar produsele care intră în aceste categorii.
-- **Aviz sanitar**: clientul confirmă că toate produsele au aviz sanitar în România.
-- Produsele Euro-Clear se pun **lângă** catalogul vechi, nu îl înlocuiesc.
-- Rețea: clientul a dat acces complet. `euro-clear.eu` merge (05.11.2026). Push-ul pe GitHub funcționează (permis de client pe 05.11.2026).
-- Structura site-ului Euro-Clear: paginile industriale sunt în `/en/industrial-water-treatment/...` (vezi `page-sitemap.xml`). Pagini de produs individuale există doar pentru ARCTON RO (`termek-sitemap.xml`, 28 modele EN). Nu au ozonizare, pompare sau stații complete, iar clorinarea e probabil la „dosing-technology”.
-- **Lot 1 (gata)**: secțiunea `#industrial` din `produse.html`, **la finalul paginii, după catalogul vechi** (cerința clientului: produsele vechi rămân primele), cu 5 carduri (dedurizatoare, filtrare/deferizare, UV VIQUA HighFlow, osmoză BlueClear/ARCTON, prefiltre DF/IWF). Pozele sunt în `img/euro-clear/*.webp` (max 600px). Cardul de osmoză nu are poză.
-- **Lot 2 (gata)**: în `#industrial`, sub-capitolul „Componente și consumabile Euro-Clear” (supape Runxin/Autotrol/Fleck/Clack, pompe dozatoare Grundfos DDA/DDC/DDE – pentru clorinare, mase filtrante și rășini, membrane și carcase, butelii/rezervoare saramură/distribuitoare). Poza ARCTON adăugată la cardul de osmoză. 14 manuale PDF industriale (EN, ~16 MB) în `docs/euro-clear/`, legate în carduri prin `<details class="info docs">`.
-- **Stații mobile containerizate** (05.11.2026): un singur card lat (`.card.wide`, poză stânga / text dreapta) în `#tratare` din `produse.html`, imediat după „Stații de tratare și echipamente industriale”. Poza e de la client (`img/produse/statie-containerizata.webp`), textul e descrierea lui, adaptată în română. Clientul NU vrea carduri separate pentru stații pe vehicul / skid (doar menționate în text) și nici secțiune separată.
-- Rămase la Euro-Clear (opțional): cele 17 manuale Runxin, fișele tehnice ale maselor filtrante, stația cu zeolit, gama rezidențială (BlueSoft, RainWater, DFA, CPF, Aquaz UV).
+## Euro-Clear – SCOS DE PE SITE (05.11.2026)
+- https://www.euro-clear.eu – producător maghiar; clientul are acordul lor pentru poze, descrieri, documente.
+- Am adăugat două loturi (echipamente industriale + componente, cu 9 poze și 14 manuale PDF), apoi **clientul a cerut să fie scoase toate produsele Euro-Clear** (05.11.2026). Secțiunea `#industrial`, `img/euro-clear/` și `docs/euro-clear/` au fost șterse; se pot recupera din istoricul git (commit-urile „Lotul 2 Euro-Clear…” și „Secțiunea Echipamente industriale Euro-Clear (lotul 1)”). **Nu le readăuga fără cererea clientului.**
+- Ce vinde clientul efectiv: stații de tratare, clorinare, sterilizare UV, ozonizare, osmoză inversă, dedurizare, deferizare, filtrare și pompare. Toate produsele au aviz sanitar în România.
+- **Stații mobile containerizate** (05.11.2026): un singur card lat (`.card.wide`, poză stânga / text dreapta) în `#tratare` din `produse.html`, imediat după „Stații de tratare și echipamente industriale”. Poza e de la client (`img/produse/statie-containerizata.webp`), textul e descrierea lui, adaptată în română. Clientul NU vrea carduri separate pentru stații pe vehicul / skid și nici secțiune separată.
+- Rețea: acces complet; push-ul pe GitHub funcționează.
 
 ## De făcut (în ordine)
 1. Netlify: **gata** (05.11.2026). Proiect `eco-aqua` → https://eco-aqua.netlify.app, se publică automat la fiecare push pe `main`. Proiectul e **Private** (vizitatorii primesc 401 și pagină de login). **Decizia clientului: NU îl facem public („Make public”) până nu e site-ul finalizat.** Formularul se testează după ce devine public.
-2. Produsele Euro-Clear (vezi mai sus).
+2. ~~Produsele Euro-Clear~~ – scoase la cererea clientului.
 3. Domeniul eco-aqua.ro legat la Netlify (de aflat registrarul).
 4. Poze: lucrări reale, laboratorul mobil, echipa, logo – prin chat (+), upload pe GitHub sau Google Drive (de conectat la https://claude.ai/customize/connectors).
 5. Studii de caz (clientul pregătește 2–3 proiecte reale).
