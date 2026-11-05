@@ -348,9 +348,9 @@ section.wrap { padding: 88px 20px; }
 .chips li strong { color: var(--navy); }
 @media (max-width: 920px) { .metal-card, .metal-cols { grid-template-columns: 1fr; gap: 20px; } }
 /* Secțiunea „Calcar, fier, mangan și nitrați”: carduri egale pe rând, conținut centrat */
-#dedurizare .prod-grid { align-items: stretch; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
-#dedurizare .prod-card h3 { text-align: center; min-height: 2.6em; display: flex; align-items: center; justify-content: center; }
-#dedurizare .prod-card > p { text-align: center; }
-#dedurizare .prod-card .tech { margin-top: auto; }
-#dedurizare .prod-card .specs { margin-bottom: 16px !important; }
+#dedurizare .prod-grid, #filtrare .prod-grid { align-items: stretch; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
+#dedurizare .prod-card h3, #filtrare .prod-card h3 { text-align: center; min-height: 2.6em; display: flex; align-items: center; justify-content: center; }
+#dedurizare .prod-card > p, #filtrare .prod-card > p { text-align: center; }
+#dedurizare .prod-card .tech, #filtrare .prod-card .tech { margin-top: auto; }
+#dedurizare .prod-card .specs, #filtrare .prod-card .specs { margin-bottom: 16px !important; }
 .tech .op { margin: 8px 0 0 !important; font-size: .9rem; }
