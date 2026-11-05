@@ -7,7 +7,7 @@
 
 ## Proiectul
 - Site static: HTML + CSS + JS simplu, **fără build**. Fișiere: `index.html`, `analiza-apei.html`, `produse.html`, `domenii.html`, `style.css`, `script.js`.
-- Depozit: https://github.com/ecoaqua/eco-aqua-site (ramura `main`). Găzduire: **Netlify** (în curs de configurare – vezi mai jos).
+- Depozit: https://github.com/ecoaqua/eco-aqua-site (ramura `main`). Găzduire: **Netlify**, https://eco-aqua.netlify.app (privat până la finalizare).
 - Formularul de ofertă din `index.html#contact` folosește **Netlify Forms** (`data-netlify="true"`).
 - Previzualizare navigabilă (privată, actualizată cu lotul 1): https://claude.ai/artifact/QE8Z1mu42HTqAgQFALPuLF – republicată dintr-o copie din scratchpad (index fără `<html>/<head>/<body>`, formularul cu `preventDefault`).
 - Mesajele de commit se scriu în română.
@@ -39,7 +39,7 @@
 - **Lot 2 (următorul)**: componente (supape Clack/Fleck/Autotrol/Runxin, rășini, membrane, rezervoare, dozare), poză pentru osmoză (de pe blueclear.eu sau o pagină ARCTON), PDF-urile de la /en/downloads/ ca descărcări.
 
 ## De făcut (în ordine)
-1. Netlify: clientul s-a înregistrat cu GitHub; rămâne Import from Git → `eco-aqua-site` → Deploy, apoi verificat linkul `*.netlify.app` și formularul.
+1. Netlify: **gata** (05.11.2026). Proiect `eco-aqua` → https://eco-aqua.netlify.app, se publică automat la fiecare push pe `main`. Proiectul e **Private** (vizitatorii primesc 401 și pagină de login). **Decizia clientului: NU îl facem public („Make public”) până nu e site-ul finalizat.** Formularul se testează după ce devine public.
 2. Produsele Euro-Clear (vezi mai sus).
 3. Domeniul eco-aqua.ro legat la Netlify (de aflat registrarul).
 4. Poze: lucrări reale, laboratorul mobil, echipa, logo – prin chat (+), upload pe GitHub sau Google Drive (de conectat la https://claude.ai/customize/connectors).
