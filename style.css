@@ -336,3 +336,14 @@ section.wrap { padding: 88px 20px; }
 /* Diagrama clor + UV pe cardul Dezinfecție: se vede întreagă, nu tăiată */
 .card-img.diagram { object-fit: contain; background: #fff; padding: 6px 4px; border-bottom: 1px solid var(--line); }
 .photo-card:hover .card-img.diagram { transform: none; }
+/* Card lat „Filtre metalice industriale” */
+.metal-card { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); gap: 32px; align-items: center; }
+.metal-card:not(:has(.metal-media:not([hidden]))) { grid-template-columns: 1fr; }
+.metal-media img { width: 100%; height: auto; max-height: 420px; object-fit: contain; border-radius: 12px; background: #fff; }
+.metal-body h3 { font-size: 1.3rem; }
+.metal-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 18px; }
+.metal-cols h4 { font-family: "Sora", sans-serif; color: var(--navy); font-size: 1rem; margin: 0 0 8px; }
+.chips { list-style: none; padding: 0 !important; margin: 0 !important; display: grid; gap: 8px; }
+.chips li { margin: 0 !important; padding: 8px 12px; border-radius: 10px; background: var(--aqua-soft); color: var(--muted); font-size: .93rem; line-height: 1.45; }
+.chips li strong { color: var(--navy); }
+@media (max-width: 920px) { .metal-card, .metal-cols { grid-template-columns: 1fr; gap: 20px; } }
