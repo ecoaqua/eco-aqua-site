@@ -305,3 +305,7 @@ section.wrap { padding: 88px 20px; }
 @keyframes ripple { 0% { width: 0; height: 0; opacity: 0; } 5% { opacity: 1; } 70% { opacity: 0; } 100% { width: 520px; height: 520px; opacity: 0; } }
 .ripples .feat .card { background: rgba(255, 255, 255, .9); }
 
+/* Cardurile „Cum lucrăm” cu poze: numărul pasului apare peste poză */
+.process .photo-card { padding-top: 26px; }
+.process .photo-card::before { z-index: 2; color: #fff; top: 14px; right: 18px; text-shadow: 0 2px 10px rgba(6, 26, 46, .55); }
+.process .photo-card .card-img { height: 150px; }

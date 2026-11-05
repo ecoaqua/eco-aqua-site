@@ -22,6 +22,7 @@
 - **Numele firmei pe site: „Eco Aqua”, nu „SC Eco Aqua SRL”** (cerința clientului, 05.11.2026). De discutat cu clientul: datele firmei (denumire completă, CUI, Nr. Reg. Com.) trebuie totuși să apară undeva (subsol / pagină de contact) – Legea 365/2002.
 - Card „Producători consacrați” (în loc de „Echipamente de renume mondial”, care nu i-a plăcut clientului).
 - Banda cu siglele partenerilor a fost adăugată și apoi **scoasă la cererea clientului** (05.11.2026); siglele (`img/parteneri/`, 29 de fișiere) se recuperează din istoricul git (commit „Siglele partenerilor, fundal nou la Despre…”). Nu le readăuga fără cerere.
+- „Cum lucrăm” (prima pagină): cele 4 carduri au poze (`.process .photo-card`, numărul pasului alb peste poză); surse în `img/proces/SURSE.md`.
 - Meniul de sus (05.11.2026, cerut de client): **Companie · Produse · Domenii · Analiza apei · Cere ofertă** (Companie prima, Analiza apei pe locul unde era Companie).
 - Hero animat (valuri + bule, respectă `prefers-reduced-motion`), cifre-cheie (24+ ani, 130+ produse, 40+ domenii, garanție 2–5 ani – corectat de client), pictograme SVG inline, meniu mobil (☰), buton flotant de apel pe mobil.
 - Laboratorul mobil de analiză a apei este argumentul principal de vânzare – scos în evidență.
