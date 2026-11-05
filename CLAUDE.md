@@ -15,6 +15,7 @@
 ## Poziționare și design (decizii luate cu clientul)
 - **Țintă principală: firme și industrie (B2B)**; titlul principal (h1 + `<title>`) e totuși „Sisteme de tratare a apei industriale și casnice” (cerut de client, 05.11.2026); persoanele fizice rămân, dar în plan secund (casetă „Aveți nevoie de apă bună acasă?”, secțiunea „Casă și familie” la finalul paginii Domenii).
 - Design modern, păstrând identitatea veche: albastru de ocean (`--navy`, `--deep`, `--blue`, `--aqua`), butoane galbene (`--sun`), sloganul „Tehnologii precise pentru purificarea apei”. Fonturi: Sora (titluri) + Manrope (text), din Google Fonts.
+- Poze de fundal în antete (05.11.2026): pe prima pagină 4 poze care se schimbă lent (`.hero-bg`, 32s), pe paginile secundare câte una (`.small-hero.photo`, `--bg`), cu strat albastru și caroiaj de „planșă tehnică”. **Clientul NU vrea pozele de pe site-ul Euro-Clear ca fundal** – folosim doar poze CC0 (lista în `img/fundal/SURSE.md`); de înlocuit cu poze reale ale clientului când le avem.
 - Hero animat (valuri + bule, respectă `prefers-reduced-motion`), cifre-cheie (24+ ani, 130+ produse, 40+ domenii, garanție 1–5 ani), pictograme SVG inline, meniu mobil (☰), buton flotant de apel pe mobil.
 - Laboratorul mobil de analiză a apei este argumentul principal de vânzare – scos în evidență.
 - După orice modificare de layout: verificare cu Playwright la 390px și 1366px, fără scroll orizontal.
