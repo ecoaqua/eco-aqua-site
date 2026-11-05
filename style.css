@@ -305,14 +305,3 @@ section.wrap { padding: 88px 20px; }
 @keyframes ripple { 0% { width: 0; height: 0; opacity: 0; } 5% { opacity: 1; } 70% { opacity: 0; } 100% { width: 520px; height: 520px; opacity: 0; } }
 .ripples .feat .card { background: rgba(255, 255, 255, .9); }
 
-/* ===== Banda cu siglele partenerilor ===== */
-.partners { padding: 72px 0; background: #fff; }
-.center-head { margin: 0 auto 32px; text-align: center; }
-.marquee { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
-.marquee-track { list-style: none; margin: 0; padding: 8px 0; display: flex; align-items: center; gap: 56px; width: max-content; animation: marquee 70s linear infinite; }
-.marquee:hover .marquee-track { animation-play-state: paused; }
-.marquee-track li { flex: none; }
-.marquee-track img { height: 48px; width: auto; max-width: 160px; object-fit: contain; filter: grayscale(1); opacity: .7; transition: filter .3s, opacity .3s; }
-.marquee-track li:hover img { filter: none; opacity: 1; }
-@keyframes marquee { to { transform: translateX(calc(-50% - 28px)); } }
-@media (prefers-reduced-motion: reduce) { .marquee-track { flex-wrap: wrap; justify-content: center; width: auto; } .marquee-track li[aria-hidden] { display: none; } .marquee { -webkit-mask-image: none; mask-image: none; } }

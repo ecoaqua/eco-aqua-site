@@ -21,7 +21,7 @@
 - Secțiunea „Despre Eco Aqua” (`#despre`): fundal cu **picături care cad pe apă** (`.ripples` + `.drop`, unde concentrice fine). Clientul NU a vrut varianta cu bule/valuri/caroiaj (prea asemănătoare cu restul) – nu o refolosi acolo.
 - **Numele firmei pe site: „Eco Aqua”, nu „SC Eco Aqua SRL”** (cerința clientului, 05.11.2026). De discutat cu clientul: datele firmei (denumire completă, CUI, Nr. Reg. Com.) trebuie totuși să apară undeva (subsol / pagină de contact) – Legea 365/2002.
 - Card „Producători consacrați” (în loc de „Echipamente de renume mondial”, care nu i-a plăcut clientului).
-- Banda „Mărcile cu care lucrăm” (`#parteneri`, după `#despre`): 29 de sigle din `Sigle Parteneri.rar` în `img/parteneri/*.webp`, derulare continuă (`.marquee`), gri și color la hover; fără `loading=lazy` (nu se încarcă în banda animată).
+- Banda cu siglele partenerilor a fost adăugată și apoi **scoasă la cererea clientului** (05.11.2026); siglele (`img/parteneri/`, 29 de fișiere) se recuperează din istoricul git (commit „Siglele partenerilor, fundal nou la Despre…”). Nu le readăuga fără cerere.
 - Meniul de sus (05.11.2026, cerut de client): **Companie · Produse · Domenii · Analiza apei · Cere ofertă** (Companie prima, Analiza apei pe locul unde era Companie).
 - Hero animat (valuri + bule, respectă `prefers-reduced-motion`), cifre-cheie (24+ ani, 130+ produse, 40+ domenii, garanție 2–5 ani – corectat de client), pictograme SVG inline, meniu mobil (☰), buton flotant de apel pe mobil.
 - Laboratorul mobil de analiză a apei este argumentul principal de vânzare – scos în evidență.
@@ -45,7 +45,7 @@
 - Lista oficială de categorii: „Sait Categorii Produse+aplicatii filtre.doc” (16 grupe). `produse.html` e reconstruită după ea: 9 secțiuni (`#filtrare`, `#dedurizare`, `#osmoza`, `#statii`, `#dezinfectie`, `#pompe`, `#componente`, `#consumabile`, `#piscine`), 32 de carduri `.prod-card` cu poză (deferizatoarele sunt 3 carduri separate: BIRM, Pyrolox, Greensand; denitrificatoarele 2: simplex și duplex – cerința clientului) (`img/catalog/*.webp`), date principale (`.specs`) și tabele tehnice în `<details class="info tech">` (`.tbl-wrap`). Pompele și piscinele au rămas din catalogul anterior; în `#statii` sunt două carduri late: „Stații de tratare a apei” (`.statie-card`, două poze din fișă în `.duo` + descrierea completă: etape, echipamente, parametri – cerut de client) și „Stații mobile containerizate”.
 - Unelte (în scratchpad, se pierd la închiderea sesiunii): conversie .doc→.docx cu LibreOffice, `unar` pentru .rar, scripturi `build_produse.py` + `assemble.py`.
 - Neincluse intenționat: afirmațiile medicale din fișa ionizatorului (hemoroizi, diabet etc.). Tabelul dedurizatoarelor industriale avea ultima coloană greșită (repeta vasul de saramură) – scoasă; de cerut clientului diametrul buteliilor.
-- În materiale există **logo-ul vechi** Eco Aqua (2985×987, „soluții profesionale pentru tratarea și epurarea apelor”) – încă nefolosit, de întrebat clientul. Siglele partenerilor sunt folosite (vezi `#parteneri`).
+- În materiale există **logo-ul vechi** Eco Aqua (2985×987, „soluții profesionale pentru tratarea și epurarea apelor”) – încă nefolosit, de întrebat clientul.
 
 ## De făcut (în ordine)
 1. Netlify: **gata** (05.11.2026). Proiect `eco-aqua` → https://eco-aqua.netlify.app, se publică automat la fiecare push pe `main`. Proiectul e **Private** (vizitatorii primesc 401 și pagină de login). **Decizia clientului: NU îl facem public („Make public”) până nu e site-ul finalizat.** Formularul se testează după ce devine public.
