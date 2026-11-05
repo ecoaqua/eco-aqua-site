@@ -1,7 +1,7 @@
 # Eco Aqua – site-ul eco-aqua.ro
 
 ## Despre client
-- Ovidiu, inginer cu peste 24 de ani de experiență în tratarea și purificarea apei. Firma: **SC Eco Aqua SRL** (zona Cluj, prefix 0264 – de confirmat).
+- Ovidiu, inginer cu peste 24 de ani de experiență în tratarea și purificarea apei. Firma: **SC Eco Aqua SRL** (Dej, jud. Cluj).
 - Este **începător în partea tehnică**: explicațiile se dau **în română, pas cu pas**, simplu, cu linkuri exacte și butoanele pe care trebuie să le apese. Folosește aplicația Claude pe Windows.
 - Abonament Pro: lucrăm pe loturi mici și eficient (scripturi care extrag doar ce trebuie, nu citire de pagini întregi).
 
@@ -31,7 +31,7 @@
 ## Conținut
 - Textele vin din site-ul vechi (Wayback Machine), copiate manual de client – `web.archive.org` refuză conexiunile din cloud.
 - Pagini vechi încă necopiate: **Alte servicii**, **Contact**, articolul de pe **Blog** despre clorinare, și celelalte taburi din „Aplicații” (UV, clorinare, stații de tratare).
-- E-mail: **office@eco-aqua.ro** (05.11.2026). Loc marcat `[DE COMPLETAT]`: **adresă/zonă**. Telefoane: **0746 183 771** (general) și **0740 075 755** (serviciul tehnic); numărul fix 0264 221 643 a fost **scos la cererea clientului**. **Serviciul tehnic: 0740 075 755** (dat de client 05.11.2026) – folosit în caseta din antet, butonul „Discută cu un inginer” și ca rând separat în Contact.
+- E-mail: **office@eco-aqua.ro** (05.11.2026). Adresă: **Str. N. Titulescu nr. 45, Dej, jud. Cluj, România** (05.11.2026), cu link Google Maps, în Contact și în subsol. Nu mai sunt locuri `[DE COMPLETAT]`. Telefoane: **0746 183 771** (general) și **0740 075 755** (serviciul tehnic); numărul fix 0264 221 643 a fost **scos la cererea clientului**. **Serviciul tehnic: 0740 075 755** (dat de client 05.11.2026) – folosit în caseta din antet, butonul „Discută cu un inginer” și ca rând separat în Contact.
 - Am scris eu (de verificat de client): descrierile scurte ale aplicațiilor/domeniilor; exemplele „lactate, panificație” la industria alimentară.
 
 ## Euro-Clear – SCOS DE PE SITE (05.11.2026)
