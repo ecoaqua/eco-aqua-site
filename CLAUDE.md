@@ -23,6 +23,7 @@
 - Card „Producători consacrați” (în loc de „Echipamente de renume mondial”, care nu i-a plăcut clientului).
 - Banda cu siglele partenerilor a fost adăugată și apoi **scoasă la cererea clientului** (05.11.2026); siglele (`img/parteneri/`, 29 de fișiere) se recuperează din istoricul git (commit „Siglele partenerilor, fundal nou la Despre…”). Nu le readăuga fără cerere.
 - „Cum lucrăm” (prima pagină): cele 4 carduri au poze (`.process .photo-card`, numărul pasului alb peste poză); surse în `img/proces/SURSE.md`.
+- Link-urile `tel:` pe calculator (05.11.2026, clientul a văzut „pagină goală”): `script.js` le interceptează pe dispozitive fără ecran tactil și arată căsuța `.call-toast` cu numărul (îl și copiază). Pe telefon sună normal.
 - Meniul de sus (05.11.2026, cerut de client): **Companie · Produse · Domenii · Analiza apei · Cere ofertă** (Companie prima, Analiza apei pe locul unde era Companie).
 - Hero animat (valuri + bule, respectă `prefers-reduced-motion`), cifre-cheie (24+ ani de experiență, 400+ proiecte executate, 40+ domenii – ales de client 05.11.2026; garanția 2–5 ani rămâne doar în cardul de la Companie), pictograme SVG inline, meniu mobil (☰), buton flotant de apel pe mobil.
 - Laboratorul mobil de analiză a apei este argumentul principal de vânzare – scos în evidență.

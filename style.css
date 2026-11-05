@@ -325,3 +325,11 @@ section.wrap { padding: 88px 20px; }
   .stat:nth-child(n+3) { border-top: 0; }
   .stat span { font-size: .82rem; line-height: 1.35; display: block; }
 }
+/* Căsuța cu numărul de telefon (doar pe calculator, la clic pe un număr) */
+.call-toast { position: fixed; left: 50%; bottom: 28px; z-index: 100; transform: translate(-50%, 20px); opacity: 0; pointer-events: none;
+  display: grid; justify-items: center; gap: 2px; padding: 16px 28px; border-radius: 16px; background: var(--navy); color: #fff;
+  box-shadow: 0 20px 50px -15px rgba(0, 0, 0, .55); border: 1px solid rgba(34, 195, 230, .4); transition: opacity .25s, transform .25s; }
+.call-toast.show { opacity: 1; transform: translate(-50%, 0); }
+.call-toast span { font-size: .9rem; color: rgba(255, 255, 255, .75); }
+.call-toast strong { font-family: "Sora", sans-serif; font-size: 1.6rem; letter-spacing: .02em; }
+.call-toast small { color: var(--aqua); font-size: .82rem; }
