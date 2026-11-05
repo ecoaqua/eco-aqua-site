@@ -47,10 +47,9 @@ section.wrap { padding: 88px 20px; }
 .nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 70px; }
 .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #fff; }
 .logo svg { width: 40px; height: 40px; flex: none; }
-.logo .lw { display: grid; gap: 3px; }
-.logo b { display: block; font-family: "Sora", sans-serif; font-weight: 600; font-size: 1rem; letter-spacing: .22em; line-height: 1; }
-.logo b + b { padding-top: 4px; border-top: 2px solid rgba(34, 195, 230, .65); }
-.logo small { display: block; white-space: nowrap; padding-left: 12px; border-left: 1px solid rgba(255, 255, 255, .22); font-size: .62rem; line-height: 1.35; letter-spacing: .06em; text-transform: uppercase; color: var(--aqua); }
+.logo .lw { display: grid; gap: 5px; }
+.logo b { display: block; font-family: "Sora", sans-serif; font-weight: 600; font-size: 1.2rem; letter-spacing: .2em; line-height: 1; }
+.logo small { display: block; padding-top: 5px; border-top: 2px solid rgba(34, 195, 230, .65); white-space: nowrap; font-size: .6rem; line-height: 1; letter-spacing: .06em; text-transform: uppercase; color: var(--aqua); }
 .top nav { display: flex; align-items: center; gap: 24px; }
 .top nav a { color: rgba(255, 255, 255, .82); text-decoration: none; font-weight: 600; font-size: .95rem; }
 .top nav a:hover { color: #fff; }
@@ -194,7 +193,8 @@ section.wrap { padding: 88px 20px; }
   .stat:nth-child(n+3) { border-top: 1px solid var(--line); }
   .process { grid-template-columns: 1fr; }
   .form-card { padding: 24px; }
-  .logo small { display: none; }
+  .logo small { font-size: .5rem; letter-spacing: .03em; }
+  .logo b { font-size: 1rem; }
 }
 /* ===== Poze de fundal în antet ===== */
 .hero-bg { position: absolute; inset: 0; z-index: 0; overflow: hidden; }
