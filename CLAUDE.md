@@ -51,7 +51,8 @@
 - În materiale există **logo-ul vechi** Eco Aqua (2985×987) – nefolosit; clientul a ales un logo nou (vezi „Logo”).
 
 ## De făcut (în ordine)
-1. Netlify: **gata** (05.11.2026). Proiect `eco-aqua` → https://eco-aqua.netlify.app, se publică automat la fiecare push pe `main`. Proiectul e **Private** (vizitatorii primesc 401 și pagină de login). **Decizia clientului: NU îl facem public („Make public”) până nu e site-ul finalizat.** Formularul se testează după ce devine public.
+1. Netlify: **gata** (05.11.2026). **Credite (05.11.2026):** planul Free are 300 credite/lună, fiecare publicare pe `main` costă 15 credite (~20 publicări/lună); pe 05.11 am făcut ~44 de push-uri pe `main` și creditele s-au terminat (proiectul e oprit până la următorul ciclu de facturare). **Regula de acum: lucrăm pe ramura de lucru, arătăm clientului prin previzualizare (artifact / capturi), și punem pe `main` doar rar, la cererea clientului, adunând mai multe modificări într-o singură publicare.** La lansare: de luat în calcul Cloudflare Pages (publicări nelimitate gratuit), dar formularul ar trebui mutat de pe Netlify Forms.
+   Detalii:  Proiect `eco-aqua` → https://eco-aqua.netlify.app, se publică automat la fiecare push pe `main`. Proiectul e **Private** (vizitatorii primesc 401 și pagină de login). **Decizia clientului: NU îl facem public („Make public”) până nu e site-ul finalizat.** Formularul se testează după ce devine public.
 2. ~~Produsele Euro-Clear~~ – scoase la cererea clientului.
 3. Domeniul eco-aqua.ro legat la Netlify (de aflat registrarul).
 4. Poze: lucrări reale, laboratorul mobil, echipa, logo – prin chat (+), upload pe GitHub sau Google Drive (de conectat la https://claude.ai/customize/connectors).
