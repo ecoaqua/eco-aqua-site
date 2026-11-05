@@ -30,7 +30,9 @@
 - Gamă industrială: dedurizatoare, filtre, UV, prefiltre mecanice, osmoză inversă BlueClear și ARCTON, componente (supape, butelii, distribuitoare, rezervoare saramură, membrane, rășini, mase filtrante, dozare), stație cu zeolit. Gamă rezidențială: BlueSoft, RainWater, SmartWaterSoftener, DFA, CPF, Aquaz UV.
 - Manuale PDF publice: https://www.euro-clear.eu/letoltesek/ (EN: /en/downloads/).
 - Plan: **întâi gama industrială**, pe loturi de 5–10 produse; script care descarcă paginile și pozele și extrage doar nume/date tehnice/descriere; descrieri **adaptate în română** (nu traduse literal, pentru SEO); pozele optimizate; PDF-urile doar atașate ca descărcări.
-- Întrebări deschise pentru client: ce produse vinde efectiv; ce produse au **aviz sanitar** în România; produsele Euro-Clear se adaugă lângă catalogul vechi sau le înlocuiesc pe cele echivalente?
+- **Ce vinde clientul efectiv** (răspuns 05.11.2026): stații de tratare, clorinare, sterilizare UV, ozonizare, osmoză inversă, dedurizare, deferizare, filtrare și pompare. Din Euro-Clear preluăm doar produsele care intră în aceste categorii.
+- Întrebări încă deschise: ce produse au **aviz sanitar** în România; produsele Euro-Clear se adaugă lângă catalogul vechi sau le înlocuiesc pe cele echivalente?
+- Acces din cloud (05.11.2026): `www.euro-clear.eu` e blocat de politica de rețea a mediului (403). Trebuie adăugat la Allowed domains. Push-ul pe GitHub cere și el permisiune (add_repo cu acces push).
 
 ## De făcut (în ordine)
 1. Netlify: clientul s-a înregistrat cu GitHub; rămâne Import from Git → `eco-aqua-site` → Deploy, apoi verificat linkul `*.netlify.app` și formularul.
