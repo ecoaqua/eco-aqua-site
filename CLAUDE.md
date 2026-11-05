@@ -31,7 +31,7 @@
 ## Conținut
 - Textele vin din site-ul vechi (Wayback Machine), copiate manual de client – `web.archive.org` refuză conexiunile din cloud.
 - Pagini vechi încă necopiate: **Alte servicii**, **Contact**, articolul de pe **Blog** despre clorinare, și celelalte taburi din „Aplicații” (UV, clorinare, stații de tratare).
-- Locuri marcate `[DE COMPLETAT]`: **e-mail**, **adresă/zonă**. Telefoane (de confirmat): 0746 183 771, 0264 221 643.
+- Locuri marcate `[DE COMPLETAT]`: **e-mail**, **adresă/zonă**. Telefoane (de confirmat): 0746 183 771, 0264 221 643. **Serviciul tehnic: 0740 075 755** (dat de client 05.11.2026) – folosit în caseta din antet, butonul „Discută cu un inginer” și ca rând separat în Contact.
 - Am scris eu (de verificat de client): descrierile scurte ale aplicațiilor/domeniilor; exemplele „lactate, panificație” la industria alimentară.
 
 ## Euro-Clear – SCOS DE PE SITE (05.11.2026)
