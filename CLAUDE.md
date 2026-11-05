@@ -13,7 +13,7 @@
 - Mesajele de commit se scriu în română.
 
 ## Poziționare și design (decizii luate cu clientul)
-- **Țintă principală: firme și industrie (B2B)**; persoanele fizice rămân, dar în plan secund (casetă „Aveți nevoie de apă bună acasă?”, secțiunea „Casă și familie” la finalul paginii Domenii).
+- **Țintă principală: firme și industrie (B2B)**; titlul principal (h1 + `<title>`) e totuși „Sisteme de tratare a apei industriale și casnice” (cerut de client, 05.11.2026); persoanele fizice rămân, dar în plan secund (casetă „Aveți nevoie de apă bună acasă?”, secțiunea „Casă și familie” la finalul paginii Domenii).
 - Design modern, păstrând identitatea veche: albastru de ocean (`--navy`, `--deep`, `--blue`, `--aqua`), butoane galbene (`--sun`), sloganul „Tehnologii precise pentru purificarea apei”. Fonturi: Sora (titluri) + Manrope (text), din Google Fonts.
 - Hero animat (valuri + bule, respectă `prefers-reduced-motion`), cifre-cheie (24+ ani, 130+ produse, 40+ domenii, garanție 1–5 ani), pictograme SVG inline, meniu mobil (☰), buton flotant de apel pe mobil.
 - Laboratorul mobil de analiză a apei este argumentul principal de vânzare – scos în evidență.
