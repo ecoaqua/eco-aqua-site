@@ -333,3 +333,6 @@ section.wrap { padding: 88px 20px; }
 .call-toast span { font-size: .9rem; color: rgba(255, 255, 255, .75); }
 .call-toast strong { font-family: "Sora", sans-serif; font-size: 1.6rem; letter-spacing: .02em; }
 .call-toast small { color: var(--aqua); font-size: .82rem; }
+/* Diagrama clor + UV pe cardul Dezinfecție: se vede întreagă, nu tăiată */
+.card-img.diagram { object-fit: contain; background: #fff; padding: 6px 4px; border-bottom: 1px solid var(--line); }
+.photo-card:hover .card-img.diagram { transform: none; }
