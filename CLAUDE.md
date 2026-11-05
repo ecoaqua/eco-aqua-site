@@ -2,6 +2,7 @@
 
 ## Despre client
 - Ovidiu, inginer cu peste 24 de ani de experiență în tratarea și purificarea apei. Firma: **SC Eco Aqua SRL** (Dej, jud. Cluj).
+- **Ne tutuim**: i se vorbește la persoana a doua singular („tu”), nu cu „dumneavoastră” (cererea lui, 05.11.2026).
 - Este **începător în partea tehnică**: explicațiile se dau **în română, pas cu pas**, simplu, cu linkuri exacte și butoanele pe care trebuie să le apese. Folosește aplicația Claude pe Windows.
 - Abonament Pro: lucrăm pe loturi mici și eficient (scripturi care extrag doar ce trebuie, nu citire de pagini întregi).
 
@@ -9,7 +10,8 @@
 - Site static: HTML + CSS + JS simplu, **fără build**. Fișiere: `index.html`, `analiza-apei.html`, `produse.html`, `domenii.html`, `style.css`, `script.js`.
 - Depozit: https://github.com/ecoaqua/eco-aqua-site (ramura `main`). Găzduire: **Netlify**, https://eco-aqua.netlify.app (privat până la finalizare).
 - Formularul de ofertă din `index.html#contact` folosește **Netlify Forms** (`data-netlify="true"`).
-- Previzualizare navigabilă (privată, actualizată cu lotul 1): https://claude.ai/artifact/QE8Z1mu42HTqAgQFALPuLF – republicată dintr-o copie din scratchpad (index fără `<html>/<head>/<body>`, formularul cu `preventDefault`).
+- Previzualizare navigabilă (privată): https://claude.ai/artifact/QE8Z1mu42HTqAgQFALPuLF – **aici îi arătăm clientului modificările** (în loc de publicări pe Netlify). Actualizată 05.11.2026 cu logo-ul nou. Se refăce dintr-o copie în scratchpad: `index.html` fără `<html>/<head>/<body>` (conținutul din head pus sus, titlul „Eco Aqua Site Preview”) + scriptul care face `preventDefault` la formular; celelalte pagini, `style.css`, `script.js` și tot `img/` (fără `SURSE.md`) se trimit prin `files`, cu `root` = copia.
+- **Depozitul GitHub e PUBLIC** (verificat 05.11.2026; cont personal `ecoaqua`, nu organizație) – oricine vede codul și istoricul (inclusiv `materiale-vechi/` și manualele Euro-Clear din commit-urile vechi). I-am recomandat clientului să-l facă privat (Settings → Danger Zone → Change visibility); Netlify merge și cu depozit privat de pe cont personal.
 - Mesajele de commit se scriu în română.
 
 ## Poziționare și design (decizii luate cu clientul)
@@ -51,10 +53,12 @@
 - În materiale există **logo-ul vechi** Eco Aqua (2985×987) – nefolosit; clientul a ales un logo nou (vezi „Logo”).
 
 ## De făcut (în ordine)
-1. Netlify: **gata** (05.11.2026). Proiect `eco-aqua` → https://eco-aqua.netlify.app, se publică automat la fiecare push pe `main`. Proiectul e **Private** (vizitatorii primesc 401 și pagină de login). **Decizia clientului: NU îl facem public („Make public”) până nu e site-ul finalizat.** Formularul se testează după ce devine public.
+1. Netlify: **gata** (05.11.2026). **Credite (05.11.2026):** planul Free are 300 credite/lună, fiecare publicare pe `main` costă 15 credite (~20 publicări/lună); pe 05.11 am făcut ~44 de push-uri pe `main` și creditele s-au terminat (proiectul e oprit până la următorul ciclu de facturare). **Regula de acum: lucrăm pe ramura de lucru, arătăm clientului prin previzualizare (artifact / capturi), și punem pe `main` doar rar, la cererea clientului, adunând mai multe modificări într-o singură publicare.** La lansare: de luat în calcul Cloudflare Pages (publicări nelimitate gratuit), dar formularul ar trebui mutat de pe Netlify Forms.
+   Detalii:  Proiect `eco-aqua` → https://eco-aqua.netlify.app, se publică automat la fiecare push pe `main`. Proiectul e **Private** (vizitatorii primesc 401 și pagină de login). **Decizia clientului: NU îl facem public („Make public”) până nu e site-ul finalizat.** Formularul se testează după ce devine public.
 2. ~~Produsele Euro-Clear~~ – scoase la cererea clientului.
 3. Domeniul eco-aqua.ro legat la Netlify (de aflat registrarul).
 4. Poze: lucrări reale, laboratorul mobil, echipa, logo – prin chat (+), upload pe GitHub sau Google Drive (de conectat la https://claude.ai/customize/connectors).
 5. Studii de caz (clientul pregătește 2–3 proiecte reale).
 6. Opțional: pagini „Probleme ale apei” (fier, mangan, duritate, nitrați, amoniu etc.) pentru SEO.
 7. Plan de promovare: Google Business Profile, analiza concurenței, liste de firme țintă (industrie, HoReCa, pensiuni), licitații publice.
+8. **La final (cerut de client 05.11.2026): un skill reutilizabil** pentru alte site-uri de prezentare (cu `skill-creator`): modul de lucru (explicații în română, pas cu pas; previzualizare în artifact, publicare pe `main` doar rar; verificare la 390/1366px; poze CC0 cu surse; logo în SVG; Netlify + formular), plus ce am învățat aici.
