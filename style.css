@@ -205,3 +205,7 @@ section.wrap { padding: 88px 20px; }
 .lead { color: var(--muted); max-width: 820px; margin: 0 0 24px; }
 .card.prod img { width: 100%; height: 200px; object-fit: contain; margin: -6px 0 16px; background: var(--soft); border-radius: 12px; padding: 10px; }
 .grid-prod { grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); }
+.sub { font-size: 1.4rem; margin: 48px 0 8px; }
+.docs ul { margin-top: 8px; padding-left: 18px; }
+.docs li { margin-bottom: 6px; font-size: .95rem; }
+.docs a { font-weight: 600; overflow-wrap: anywhere; }
