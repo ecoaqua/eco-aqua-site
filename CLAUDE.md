@@ -19,7 +19,7 @@
 - Poze în conținut (05.11.2026, CC0, `img/domenii/SURSE.md`): bandă `.banner` sub fiecare categorie din `domenii.html`, poză în capul cardurilor „Industrii deservite” din `index.html` (`.photo-card` + `.card-img`), poză lângă „De ce să începeți” (`.split` + `.side-img`) și bandă la „Ce analizăm” în `analiza-apei.html`. **Clientul caută poze de la lucrările lui** – când le trimite, le punem în locul celor CC0.
 - Secțiunea „Tehnologii pentru apa de proces…” (`#produse` din `index.html`, 05.11.2026): pe toată lățimea (`.flow`), cu fundal animat (caroiaj, lumini care se mișcă lent, bule `.flow-bubble`), 6 carduri cu poză (`.photo-card`), câte 3 pe rând. Surse: `img/solutii/SURSE.md`.
 - Meniul de sus (05.11.2026, cerut de client): **Companie · Produse · Domenii · Analiza apei · Cere ofertă** (Companie prima, Analiza apei pe locul unde era Companie).
-- Hero animat (valuri + bule, respectă `prefers-reduced-motion`), cifre-cheie (24+ ani, 130+ produse, 40+ domenii, garanție 1–5 ani), pictograme SVG inline, meniu mobil (☰), buton flotant de apel pe mobil.
+- Hero animat (valuri + bule, respectă `prefers-reduced-motion`), cifre-cheie (24+ ani, 130+ produse, 40+ domenii, garanție 2–5 ani – corectat de client), pictograme SVG inline, meniu mobil (☰), buton flotant de apel pe mobil.
 - Laboratorul mobil de analiză a apei este argumentul principal de vânzare – scos în evidență.
 - După orice modificare de layout: verificare cu Playwright la 390px și 1366px, fără scroll orizontal.
 
