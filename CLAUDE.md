@@ -60,3 +60,4 @@
 5. Studii de caz (clientul pregătește 2–3 proiecte reale).
 6. Opțional: pagini „Probleme ale apei” (fier, mangan, duritate, nitrați, amoniu etc.) pentru SEO.
 7. Plan de promovare: Google Business Profile, analiza concurenței, liste de firme țintă (industrie, HoReCa, pensiuni), licitații publice.
+8. **La final (cerut de client 05.11.2026): un skill reutilizabil** pentru alte site-uri de prezentare (cu `skill-creator`): modul de lucru (explicații în română, pas cu pas; previzualizare în artifact, publicare pe `main` doar rar; verificare la 390/1366px; poze CC0 cu surse; logo în SVG; Netlify + formular), plus ce am învățat aici.
