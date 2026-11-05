@@ -11,6 +11,7 @@
 - Depozit: https://github.com/ecoaqua/eco-aqua-site (ramura `main`). Găzduire: **Netlify**, https://eco-aqua.netlify.app (privat până la finalizare).
 - Formularul de ofertă din `index.html#contact` folosește **Netlify Forms** (`data-netlify="true"`).
 - Previzualizare navigabilă (privată): https://claude.ai/artifact/QE8Z1mu42HTqAgQFALPuLF – **aici îi arătăm clientului modificările** (în loc de publicări pe Netlify). Actualizată 05.11.2026 cu logo-ul nou. Se refăce dintr-o copie în scratchpad: `index.html` fără `<html>/<head>/<body>` (conținutul din head pus sus, titlul „Eco Aqua Site Preview”) + scriptul care face `preventDefault` la formular; celelalte pagini, `style.css`, `script.js` și tot `img/` (fără `SURSE.md`) se trimit prin `files`, cu `root` = copia.
+- **Depozitul GitHub e PUBLIC** (verificat 05.11.2026; cont personal `ecoaqua`, nu organizație) – oricine vede codul și istoricul (inclusiv `materiale-vechi/` și manualele Euro-Clear din commit-urile vechi). I-am recomandat clientului să-l facă privat (Settings → Danger Zone → Change visibility); Netlify merge și cu depozit privat de pe cont personal.
 - Mesajele de commit se scriu în română.
 
 ## Poziționare și design (decizii luate cu clientul)
