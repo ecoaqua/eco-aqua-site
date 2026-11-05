@@ -36,6 +36,13 @@
 - **Stații mobile containerizate** (05.11.2026): un singur card lat (`.card.wide`, poză stânga / text dreapta) în `#tratare` din `produse.html`, imediat după „Stații de tratare și echipamente industriale”. Poza e de la client (`img/produse/statie-containerizata.webp`), textul e descrierea lui, adaptată în română. Clientul NU vrea carduri separate pentru stații pe vehicul / skid și nici secțiune separată.
 - Rețea: acces complet; push-ul pe GitHub funcționează.
 
+## Catalogul din materialele vechi (05.11.2026)
+- Clientul a urcat în `materiale-vechi/` (commit „Add files via upload”): `Produse.rar` (fișe .doc cu descrieri, tabele, poze), `Sigle Parteneri.rar` (29 de sigle de mărci partenere), `Prezentare Eco Aqua.docx`. Folderul a fost **scos din site** după extragere (ar fi fost public pe Netlify); se recuperează din istoricul git.
+- Lista oficială de categorii: „Sait Categorii Produse+aplicatii filtre.doc” (16 grupe). `produse.html` e reconstruită după ea: 9 secțiuni (`#filtrare`, `#dedurizare`, `#osmoza`, `#statii`, `#dezinfectie`, `#pompe`, `#componente`, `#consumabile`, `#piscine`), 29 de carduri `.prod-card` cu poză (`img/catalog/*.webp`), date principale (`.specs`) și tabele tehnice în `<details class="info tech">` (`.tbl-wrap`). Pompele și piscinele au rămas din catalogul anterior; cardul „Stații mobile containerizate” e în `#statii`.
+- Unelte (în scratchpad, se pierd la închiderea sesiunii): conversie .doc→.docx cu LibreOffice, `unar` pentru .rar, scripturi `build_produse.py` + `assemble.py`.
+- Neincluse intenționat: afirmațiile medicale din fișa ionizatorului (hemoroizi, diabet etc.). Tabelul dedurizatoarelor industriale avea ultima coloană greșită (repeta vasul de saramură) – scoasă; de cerut clientului diametrul buteliilor.
+- În materiale există **logo-ul vechi** Eco Aqua (2985×987, „soluții profesionale pentru tratarea și epurarea apelor”) și siglele partenerilor – încă nefolosite, de întrebat clientul.
+
 ## De făcut (în ordine)
 1. Netlify: **gata** (05.11.2026). Proiect `eco-aqua` → https://eco-aqua.netlify.app, se publică automat la fiecare push pe `main`. Proiectul e **Private** (vizitatorii primesc 401 și pagină de login). **Decizia clientului: NU îl facem public („Make public”) până nu e site-ul finalizat.** Formularul se testează după ce devine public.
 2. ~~Produsele Euro-Clear~~ – scoase la cererea clientului.
