@@ -284,3 +284,13 @@ section.wrap { padding: 88px 20px; }
 .tbl-wrap thead th { background: var(--aqua-soft); color: var(--navy); border-top: 0; }
 .tbl-wrap tbody th { background: var(--soft); color: var(--ink); font-weight: 600; }
 .tbl-wrap tbody tr:nth-child(even) td { background: #fafcfe; }
+/* Card lat „Stații de tratare a apei” (două poze + descriere din fișa tehnică) */
+.statie-card { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr); gap: 32px; align-items: start; }
+.duo { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.duo-img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 12px; border: 1px solid var(--line); }
+.statie-body h3 { font-size: 1.3rem; }
+.statie-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 18px; }
+.statie-cols h4 { font-family: "Sora", sans-serif; color: var(--navy); font-size: 1rem; margin: 0 0 4px; }
+.statie-cols .specs + h4 { margin-top: 18px; }
+@media (max-width: 920px) { .statie-card, .statie-cols { grid-template-columns: 1fr; gap: 20px; } }
+@media (min-width: 921px) { .duo { position: sticky; top: 96px; } }
