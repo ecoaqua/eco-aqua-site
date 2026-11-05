@@ -35,7 +35,7 @@
 - Produsele Euro-Clear se pun **lângă** catalogul vechi, nu îl înlocuiesc.
 - Rețea: clientul a dat acces complet. `euro-clear.eu` merge (05.11.2026). Push-ul pe GitHub funcționează (permis de client pe 05.11.2026).
 - Structura site-ului Euro-Clear: paginile industriale sunt în `/en/industrial-water-treatment/...` (vezi `page-sitemap.xml`). Pagini de produs individuale există doar pentru ARCTON RO (`termek-sitemap.xml`, 28 modele EN). Nu au ozonizare, pompare sau stații complete, iar clorinarea e probabil la „dosing-technology”.
-- **Lot 1 (gata)**: secțiunea `#industrial` din `produse.html`, cu 5 carduri (dedurizatoare, filtrare/deferizare, UV VIQUA HighFlow, osmoză BlueClear/ARCTON, prefiltre DF/IWF). Pozele sunt în `img/euro-clear/*.webp` (max 600px). Cardul de osmoză nu are poză.
+- **Lot 1 (gata)**: secțiunea `#industrial` din `produse.html`, **la finalul paginii, după catalogul vechi** (cerința clientului: produsele vechi rămân primele), cu 5 carduri (dedurizatoare, filtrare/deferizare, UV VIQUA HighFlow, osmoză BlueClear/ARCTON, prefiltre DF/IWF). Pozele sunt în `img/euro-clear/*.webp` (max 600px). Cardul de osmoză nu are poză.
 - **Lot 2 (următorul)**: componente (supape Clack/Fleck/Autotrol/Runxin, rășini, membrane, rezervoare, dozare), poză pentru osmoză (de pe blueclear.eu sau o pagină ARCTON), PDF-urile de la /en/downloads/ ca descărcări.
 
 ## De făcut (în ordine)
